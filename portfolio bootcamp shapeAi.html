@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Portfolio</title>
+    <link href="portfolio bootcamp shapeAi.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main class='main'>
+      <nav class='navBar'>
+        <h1>Nikhil<span class="top">K Bhat</span> Portfolio</h1>
+        <div class='navigationMenu'>
+          <a href="#aboutMe">About Me</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contactForm">Let's Connect!</a>
+        <div>
+      </nav>
+      <section class='heroSection'>
+        <img 
+        class='profileImage'src="nikhil.jpg">
+        <div class='herosectionDetails'>
+          <h1><a style="text-decoration:none" href="https://www.linkedin.com/in/nikhil-k-bhat-8745611b7">Nikhil K Bhat</a></h1>
+          <h3>Enthusiastic Web Developer</h3>
+        </div>
+      </section>
+      <section class='aboutMe' id='aboutMe'>
+        <h1>About Me</h1>
+        <p style="font-size: 20px;">I am from kervashe,karnataka.
+          I'm 2nd year engineering student pursuing Information Science Engineering from Mangalore Institute of Technology and Engineering,moodbidri,moodbidri. I'm a quick and passionate learner. I have learnt marketing skills from various organizations. I'm a team Leader at Lyriclious where I  handled many batches of campus ambassador interns and guided them throughout their internship program. An energetic individual and keen to learn new skills and I believe every day is a chance to begin again</p>
+      </section>
+      <section class='skillsAndProjects'>
+        <div class='skills' id='skills'>
+          <h1 class='cardHeading'>Skills</h1>
+          <img title='HTML' src='html1.svg'>
+          <img title='CSS' src='css.svg'>
+          <img title='Javascript' src='javascript.svg'>
+          <img title='Bootstrap' src='bootstrap.svg'>
+          <img title='PHP' src='php.svg'>
+          <img title='SQL' src='sql.svg'>
+          <img title='C programming' src='c.svg'>
+        </div>
+        <div class='projects' id='projects'>
+          <h1 class='cardHeading'>Projects</h1>
+          <div class='projectContainer'>
+            <img title="Lyriclious" src='lyriclious.jpg'/>
+            <div class='projectDescription'>
+              <h4><a style="text-decoration: none; color: red;" href="http://nikhilkbhat.000webhostapp.com/ ">E-commerce Website</a></h4>
+              <p>Completed Full-Stack Web Development internship </p>
+            </div>
+          </div>
+          <div class='projectContainer'>
+            <img title="St John College of Engineering and Management" src='case study.png'/>
+            <div class='projectDescription'>
+              <h4><a style="text-decoration: none; color: red;" href="https://drive.google.com/file/d/1WOWj2b-05tq7BgrfSNG90KEPFRwEAAh8/view?usp=sharing">5S implementation in automobile industry</a></h4>
+              <p>Name of the industry-ACMA center for technology</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='contactForm' id='contactForm'>
+        <h1>Let's Connect!</h2>
+        <div class='formGroup'>
+          <label for='name'>Enter Full Name</label><br/>
+          <input type='text' id='name' placeholder='Full Name'/>
+        </div>
+        <div class='formGroup'>
+          <label for='email'>Email</label><br/>
+          <input type='text' id='email' placeholder='Email'/>
+        </div>
+        <div class='formGroup'>
+          <label for='message'>Message</label><br/>
+          <textarea placeholder="Send some message!" id="message" name="w3review" rows="4" cols="50"></textarea>
+        </div>
+        <button class='submitButton' onClick={submit()}>Connect</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
